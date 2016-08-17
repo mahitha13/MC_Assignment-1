@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,50 +8,87 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mahitha.myapplication.MainActivity">
+    tools:context="com.example.mahitha.myapplication.MainActivity"
+    android:background="#f000"
+    android:weightSum="1"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Is this a prime number?"
-        android:id="@+id/textView2" />
+        android:layout_width="351dp"
+        android:layout_height="40dp"
+        android:text="Choose the correct option"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:textSize="45px"
+        android:id="@+id/textView3" />
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleSmall"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="Question1: The following number is a prime."
+        android:textColor="#ffffff"
+        android:textSize="55px"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:id="@+id/textView2"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ffffff"
+
+        android:textSize="55px"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:id="@+id/textView"
+        android:layout_weight="0.20" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="incorrect"
+        android:textColor="#ffffff"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:background="#ff9892"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Correct"
-        android:id="@+id/button"
-        android:layout_marginTop="77dp"
+        android:textColor="#ffffff"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:background="#ff9892"
+        android:id="@+id/button2"
+        android:layout_marginTop="10dp"
         android:layout_toLeftOf="@+id/button2"
         android:layout_toStartOf="@+id/button2" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="incorrect"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="next"
+        android:textColor="#ffffff"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:background="#c74646"
         android:id="@+id/button3"
-        android:layout_alignTop="@+id/button2"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
 
-</RelativeLayout>
+</LinearLayout>
