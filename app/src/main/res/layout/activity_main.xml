@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+<LinearLayout
     android:background="#000"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,6 +16,10 @@
     tools:context="com.example.mahitha.myapplication.MainActivity"
     android:weightSum="1"
     android:orientation="vertical">
+
+
+
+
 
     <TextView
         android:layout_width="351dp"
@@ -25,7 +33,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Question1: The following number is a prime."
+        android:text="Question: The following number is a prime."
         android:textColor="#ffffff"
         android:textSize="55px"
         android:textStyle="bold"
@@ -77,6 +85,30 @@
         android:layout_toStartOf="@+id/button2" />
 
     <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Show Hint"
+        android:textColor="#f000"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:background="#ff9892"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_hint" />
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Cheat"
+        android:textColor="#f000"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:background="#ff9892"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_cheat" />
+
+    <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
@@ -92,16 +124,5 @@
         android:layout_toRightOf="@+id/button3"
         android:layout_toEndOf="@+id/button3" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cheat"
-        android:id="@+id/button_cheat" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hint"
-        android:id="@+id/button_hint" />
-
 </LinearLayout>
+</ScrollView>
