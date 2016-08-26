@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NoQuestion"></activity>
+        <activity android:name=".NoQuestion" />
+        <activity android:name=".HintActivity" />
+        <activity android:name=".CheatActivity"></activity>
     </application>
 
 </manifest>
